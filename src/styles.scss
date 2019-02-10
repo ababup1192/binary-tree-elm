@@ -16,6 +16,18 @@ body {
 .search {
   width: 100px;
 }
+@for $i from 0 through 50 {
+
+  .flash-#{$i} {
+    animation: Flash 2.5s ease calc(#{$i} * 0.5s + 1s) 3;
+  }
+}
+
+@keyframes Flash{
+  50%{
+    box-shadow: 0 1px 15px 1px blue;
+  }
+}
 
 .tree ul {
 	padding-top: 20px; position: relative;
