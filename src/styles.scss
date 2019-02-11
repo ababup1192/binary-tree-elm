@@ -13,9 +13,18 @@ body {
 * {margin: 0; padding: 0;}
 
 
-.search {
+input[type=number] {
   width: 100px;
 }
+
+a.button {
+  width: 120px;
+
+  +.button {
+    margin-left: 5px;
+  }
+}
+
 @for $i from 0 through 50 {
 
   .flash-#{$i} {
